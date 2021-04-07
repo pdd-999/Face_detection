@@ -13,8 +13,8 @@ from .utils.box_utils import decode, decode_landm
 
 class RetinaDetector(FaceDetector):
     def __init__(self, device, 
-                    path_to_detector="retinaface/weights/mobilenet0.25_Final.pth", 
-                    mobilenet_pretrained="retinaface/weights/mobilenetV1X0.25_pretrain.tar", 
+                    path_to_detector="Face_detection/weights/mobilenet0.25_Final.pth", 
+                    mobilenet_pretrained="Face_detection/weights/mobilenetV1X0.25_pretrain.tar", 
                     verbose=None):
         super().__init__(device, verbose)
         
@@ -127,6 +127,7 @@ class RetinaDetector(FaceDetector):
             det[2] = np.clip(det[2], 0, im_width)
             det[1] = np.clip(det[1], 0, im_height)
             det[3] = np.clip(det[3], 0, im_height)
+        
         
         return dets
 
