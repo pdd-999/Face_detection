@@ -1,0 +1,4 @@
+outs:
+- md5: d308262876f997c63f79c7805b2cdab0
+  size: 1789735
+  path: mobilenet0.25_Final.pth

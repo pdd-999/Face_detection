@@ -1,0 +1,4 @@
+outs:
+- md5: 842f139f153a509bdc120c07c4f792dd
+  size: 3827150
+  path: mobilenetV1X0.25_pretrain.tar
